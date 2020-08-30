@@ -31,5 +31,59 @@ public class Student {
         this.studentUniversityRollNumber = studentUniversityRollNumber;
     }
 
+    public String getFirstNameOfStudent() {
+        return firstNameOfStudent;
+    }
 
+    public void setFirstNameOfStudent(String firstNameOfStudent) {
+        this.firstNameOfStudent = firstNameOfStudent;
+    }
+
+    public String getMiddleNameOfStudent() {
+        return middleNameOfStudent;
+    }
+
+    public void setMiddleNameOfStudent(String middleNameOfStudent) {
+        this.middleNameOfStudent = middleNameOfStudent;
+    }
+
+    public String getLastNameOfStudent() {
+        return lastNameOfStudent;
+    }
+
+    public void setLastNameOfStudent(String lastNameOfStudent) {
+        this.lastNameOfStudent = lastNameOfStudent;
+    }
+
+    public String getFullNameOfStudent() {
+        return fullNameOfStudent;
+    }
+
+    public void setFullNameOfStudent(String fullNameOfStudent) {
+        this.fullNameOfStudent = fullNameOfStudent;
+    }
+
+    public long getStudentUniversityRollNumber() {
+        return studentUniversityRollNumber;
+    }
+
+    public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
+    public int getNumberOfBooksIssuedByStudent() {
+        return numberOfBooksIssuedByStudent;
+    }
+
+    public void setNumberOfBooksIssuedByStudent(int numberOfBooksIssuedByStudent) {
+        this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
+    }
+
+    public Book[] getNameOfAllTheBooksIssuedByTheStudent() {
+        return nameOfAllTheBooksIssuedByTheStudent;
+    }
+
+    public void setNameOfAllTheBooksIssuedByTheStudent(Book[] nameOfAllTheBooksIssuedByTheStudent) {
+        this.nameOfAllTheBooksIssuedByTheStudent = nameOfAllTheBooksIssuedByTheStudent;
+    }
 }
