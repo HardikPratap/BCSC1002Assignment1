@@ -11,6 +11,10 @@ import java.util.Arrays;
 public class Library {
     private Book[] booksCurrentlyAvailable;
 
+    public Library() {
+        this.booksCurrentlyAvailable = new Book[6];
+    }
+
     public Book[] getBooksCurrentlyAvailable() {
         return booksCurrentlyAvailable.clone();
     }
