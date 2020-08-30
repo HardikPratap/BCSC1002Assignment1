@@ -58,12 +58,12 @@ public class Book {
     }
 
     public void doReturn() {
-        System.out.println("Thamk You for Returning the Book.");
+        System.out.println("Thank You for Returning the Book.");
     }
 
     @Override
     public String toString() {
-        return "Information about the book----->\n" +
+        return "\n\nInformation about the book----->\n" +
                 "nameOfTheBook='" + nameOfTheBook + '\'' +
                 "\nauthorOfTheBook='" + authorOfTheBook + '\'' +
                 "\nisbnNumberOfTheBook='" + isbnNumberOfTheBook + '\'';
@@ -83,4 +83,9 @@ public class Book {
     public int hashCode() {
         return Objects.hash(getNameOfTheBook(), getAuthorOfTheBook(), getIsbnNumberOfTheBook());
     }
+
+    public void issueBook(String bookName) {
+        System.out.println("\"" + bookName + "\"" + " is now issued to you!!");
+    }
+
 }

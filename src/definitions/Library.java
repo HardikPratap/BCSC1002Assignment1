@@ -12,7 +12,7 @@ public class Library {
     private Book[] booksCurrentlyAvailable;
 
     public Library() {
-        this.booksCurrentlyAvailable = new Book[6];
+        this.booksCurrentlyAvailable = new Book[5];
     }
 
     public Book[] getBooksCurrentlyAvailable() {

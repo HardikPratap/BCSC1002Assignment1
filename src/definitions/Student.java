@@ -19,11 +19,11 @@ public class Student {
     private Book[] nameOfAllTheBooksIssuedByTheStudent;
 
     public Student() {
-        firstNameOfStudent = "Hardik";
-        middleNameOfStudent = "Pratap";
-        lastNameOfStudent = "Singh";
-        studentUniversityRollNumber = 191500310;
-        numberOfBooksIssuedByStudent = 1;
+        this.nameOfAllTheBooksIssuedByTheStudent = new Book[5];
+        for (int i = 0; i < nameOfAllTheBooksIssuedByTheStudent.length; i++) {
+            nameOfAllTheBooksIssuedByTheStudent[i] = new Book("Book" + (i + 1));
+        }
+
     }
 
     public Student(String firstNameOfStudent, String middleNameOfStudent, String lastNameOfStudent, long studentUniversityRollNumber) {
@@ -119,5 +119,12 @@ public class Student {
         int result = Objects.hash(getFirstNameOfStudent(), getMiddleNameOfStudent(), getLastNameOfStudent(), getFullNameOfStudent(), getStudentUniversityRollNumber(), getNumberOfBooksIssuedByStudent());
         result = 31 * result + Arrays.hashCode(getNameOfAllTheBooksIssuedByTheStudent());
         return result;
+    }
+
+    public void nameOfBooks() {
+        for (Book books : this.nameOfAllTheBooksIssuedByTheStudent) {
+            System.out.println(books);
+        }
+
     }
 }
