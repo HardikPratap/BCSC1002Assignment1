@@ -57,6 +57,10 @@ public class Book {
         System.out.println("Thank You.....");
     }
 
+    public void doReturn() {
+        System.out.println("Thamk You for Returning the Book.");
+    }
+
     @Override
     public String toString() {
         return "Information about the book----->\n" +
