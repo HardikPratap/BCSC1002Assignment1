@@ -53,6 +53,10 @@ public class Book {
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
     }
 
+    public void doIssue() {
+        System.out.println("Thank You.....");
+    }
+
     @Override
     public String toString() {
         return "Information about the book----->\n" +
